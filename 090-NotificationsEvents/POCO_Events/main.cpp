@@ -1,3 +1,4 @@
+// События: Система подписки на новости
 #include "Poco/BasicEvent.h"
 #include "Poco/Delegate.h"
 #include "Poco/SharedPtr.h"
