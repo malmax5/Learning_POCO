@@ -1,0 +1,2 @@
+This goes to console and both files!
+Multiple streams with one write operation.
