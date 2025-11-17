@@ -64,11 +64,15 @@ int main(int argc, char* argv[])
     {
         Poco::ProcessHandle consumer = Process::launch(argv[0], args);
         handles.push_back(consumer);
+
+        std::cout << "Started process " << i + 1 << " with PID: " << consumer.id() << std::endl;
     }
 
     for (auto& handle : handles)
     {
         handle.wait();
+
+        std::cout << "Finished process " << " with PID: " << handle.id() << std::endl;
     }
 
     return 0;
